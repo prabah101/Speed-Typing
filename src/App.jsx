@@ -3,6 +3,7 @@ import './style.css'
 import useWordGame from "./hooks/useWordGame"
 
 function App() {
+  const TIME = 5
   const {textBoxRef,
     handleChange,
     text,
@@ -10,7 +11,7 @@ function App() {
     timeRemaining,
     startGame,
     wordCount
-  } = useWordGame(5)
+  } = useWordGame(TIME)
 
   return (
       <div>
@@ -24,6 +25,7 @@ function App() {
           <h4>Time remaining: {timeRemaining}</h4>
           <button onClick={startGame} disabled={isTimeRunning}>Start</button>
           <h1>Word count: {wordCount}</h1>
+          {!isTimeRunning && <h1>WPM: {wordCount*60/TIME}</h1> }
       </div>
   )
 }
