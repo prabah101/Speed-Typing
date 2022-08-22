@@ -21,7 +21,7 @@ function App() {
             value={text}
             disabled={!isTimeRunning}
           />
-          <h4>Time remainaing: {timeRemaining}</h4>
+          <h4>Time remaining: {timeRemaining}</h4>
           <button onClick={startGame} disabled={isTimeRunning}>Start</button>
           <h1>Word count: {wordCount}</h1>
       </div>
