@@ -1,48 +1,103 @@
 html, body {
-    background: black;
-    color: #00b800;
+    background:#212329;
+    color: #72B9DA;
     margin:0;
     padding: 0;
     padding-top: 10px;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 body {
     font-weight: 400;
 }
-
 button:disabled {
     cursor: not-allowed;
 }
-
 button {
-    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
     display: block;
     margin: 0 auto;
     border: none;
-    background: #a80020;
-    background: #00b800;
+    background: #334155;
+    color: #F9F6FA;
     padding: 10px 20px;
     text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
+button{
+    font-family: 'Lexend Deca', sans-serif;
+    position: relative;
+    background: #334155;
+    color: #F9F6FA;
+    font-size: 16px;
+    color: white;
+    padding: 0.8em 1.8em;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s
+  }
+
+button:hover {
+    transition-duration: 0.1s;
+    background-color: #3A3A3A;
+  }
+  
+button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
+  
+button:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+button:active {
+    top: 1px;
+  }
+
 h1 {
-    font-size: 20px;
+    font-size: 1.5rem;
+    text-align:center;
+}
+h4{
+    font-size: 1.5rem;
     text-align:center;
 }
 
 textarea {
-    font-family: 'Press Start 2P', cursive;
-    border: 3px solid black;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: .37rem;
+    font-family: 'Roboto Mono', monospace;
+    border: 3px;
     width: 90%;
     margin: 0 auto;
     outline: none;
     height: 200px;
-    background: #00b800;
+    background: #2B2D34;
+    color: #CDCDCE;
     padding: 10px;
 }
 
 textarea:disabled {
-    background-color: #a5a2a2;
+    background-color: #333333;
 }
